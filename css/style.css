@@ -39,7 +39,13 @@ body {
 	font-size: 2.5em;
 	background: #D1D2D4;
 	border: 1px solid #8F9092;
-	padding: 1em 0;
+	/*padding: 1em 0;*/
+	height: 120px;
+	cursor: pointer;
+}
+.btn:hover {
+	/*border-width: 3px;*/
+	background: radial-gradient(#D1D2D4, #b7b8bb);
 }
 .btn:nth-last-child(4) {
 	border-right: none;
@@ -50,9 +56,15 @@ body {
 .btn:first-child, .btn:nth-child(2), .btn:nth-child(3) {
 	background: #C7C8CA;
 	font-size: 1.474em;
-	padding: 2.1em 0;
+	/*padding: 2.1em 0;*/
+}
+.btn:first-child:hover, .btn:nth-child(2):hover, .btn:nth-child(3):hover {
+	background: radial-gradient(#C7C8CA, #adaeb1);
 }
 .btn:nth-child(4n) {
 	background: #F57F29;
 	color: #FBD58D;
+}
+.btn:nth-child(4n):hover {
+	background: radial-gradient(#F57F29, #e1650a);
 }
