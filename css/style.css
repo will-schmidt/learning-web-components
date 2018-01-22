@@ -19,10 +19,13 @@ body {
 #display {
 	padding: 2em 1em;
 }
-#display label {
-	display: block;
+#display input {
+	max-width: 100%;
 	text-align: right;
 	font-size: 5em;
+	background: transparent;
+    border: none;
+    color: #DBDBDB;
 }
 
 #buttons {
