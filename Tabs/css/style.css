@@ -1,6 +1,36 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
 /* Selector #1  */
-div.tabComponent input {}
+div.tabComponent input {
+	display: none;
+}
 
 /* Selector #2  */
-div.tabComponent label {}
+div.tabComponent label {
+	font-weight: 700;
+	background: #D9DFE9;
+	cursor: pointer;
+}
+
+div.tabComponent input:checked + label {
+	background: #7B8DAB;	
+}
+
+
+
+div.tabComponent ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+div.tabComponent li {
+	float: left;
+}
+
+div.tabComponent li div.content {
+	position: absolute;
+	top: 300px;
+}
