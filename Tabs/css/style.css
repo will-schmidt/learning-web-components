@@ -2,6 +2,12 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+div.tabComponent {
+	border: 1px solid #CFD6D6;
+	max-width: 600px;
+    min-height: 200px;
+}
+
 /* Selector #1  */
 div.tabComponent input {
 	display: none;
@@ -16,6 +22,7 @@ div.tabComponent label {
 
 div.tabComponent input:checked + label {
 	background: #7B8DAB;	
+	border-top: 2px solid #FDB630;
 }
 
 
