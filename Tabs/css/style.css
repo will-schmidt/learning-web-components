@@ -6,7 +6,9 @@ div.tabComponent {
 	border: 1px solid #CFD6D6;
 	max-width: 600px;
     min-height: 200px;
+
 }
+
 
 /* Selector #1  */
 div.tabComponent input {
@@ -16,28 +18,40 @@ div.tabComponent input {
 /* Selector #2  */
 div.tabComponent label {
 	font-weight: 700;
-	background: #D9DFE9;
+	background: #F7F7F7;
 	cursor: pointer;
+	display: block;
+	padding: 4px 8px;
 }
 
 div.tabComponent input:checked + label {
-	background: #7B8DAB;	
+	background: white;/*#7B8DAB;*/	
 	border-top: 2px solid #FDB630;
 }
 
-
+div.tabComponent input:checked ~ div.content {
+	display: block;
+}
 
 div.tabComponent ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	position: relative;
 }
 
 div.tabComponent li {
 	float: left;
 }
+div.tabComponent ul:after {
+	clear: both;
+    content: " ";
+    height: 0;
+    display: block;
+}
 
 div.tabComponent li div.content {
+	display: none;
 	position: absolute;
-	top: 300px;
+	left: 0;
 }
