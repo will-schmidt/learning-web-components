@@ -1,36 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-}
 
+}
+/* Div for whole tab ara */
 div.tabComponent {
-	border: 1px solid #CFD6D6;
 	max-width: 600px;
-    min-height: 200px;
-
-}
-
-
-/* Selector #1  */
-div.tabComponent input {
-	display: none;
-}
-
-/* Selector #2  */
-div.tabComponent label {
-	font-weight: 700;
-	background: #F7F7F7;
-	cursor: pointer;
-	display: block;
-	padding: 4px 8px;
-}
-
-div.tabComponent input:checked + label {
-	background: white;/*#7B8DAB;*/	
-	border-top: 2px solid #FDB630;
-}
-
-div.tabComponent input:checked ~ div.content {
-	display: block;
+    /*min-height: 200px;*/
+    border-left: 1px solid #CFD6D6;
 }
 
 div.tabComponent ul {
@@ -43,6 +23,52 @@ div.tabComponent ul {
 div.tabComponent li {
 	float: left;
 }
+
+
+/* Radio input for toggling  */
+div.tabComponent input {
+	display: none;
+}
+
+/* Label for tab name  */
+div.tabComponent label {
+	font-weight: 700;
+	background: #F7F7F7;
+	cursor: pointer;
+	display: block;
+	padding: 4px 8px 6px;
+	border-right: 1px solid #CFD6D6;
+	border-top: 1px solid #CFD6D6;
+	color: #303336;
+}
+
+/* Label of tab that has radio button checked */
+div.tabComponent input:checked + label {
+	background: white;/*#7B8DAB;*/	
+	border-top: 2px solid #FDB630;
+	padding-top: 3px;
+	position: relative;
+    z-index: 1;
+}
+
+/* Content area for each tab */
+div.tabComponent li div.content {
+	display: none;
+	background: white;
+	position: absolute;
+	left: -1px;
+	top: 30px;
+	padding: 10px 15px;
+	border: 1px solid #CFD6D6;
+	width: 100%;
+}
+
+/* Div under radio button that's checked */
+div.tabComponent input:checked ~ div.content {
+	display: block;
+}
+
+
 div.tabComponent ul:after {
 	clear: both;
     content: " ";
@@ -50,8 +76,4 @@ div.tabComponent ul:after {
     display: block;
 }
 
-div.tabComponent li div.content {
-	display: none;
-	position: absolute;
-	left: 0;
-}
+
