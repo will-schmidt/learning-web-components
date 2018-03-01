@@ -6,3 +6,43 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 
 }
+
+.signupForm {
+	background: #f2f2f2;
+	padding: 10px;
+	display: inline-block;
+}
+
+.inputfield {
+	position: relative;
+	padding: 12px 0 0;
+	margin: 0 0 5px;
+}
+
+.inputfield input[type=text] + label, .inputfield input[type=password] + label, .inputfield input[type=email] + label {
+	position: absolute;
+	left: 6px;
+	top: 15px;
+	cursor: text;
+}
+
+.inputfield input {
+	font-size: 14px;
+	padding: 4px 7px;
+	border: 2px solid #FDB630;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	background: transparent;
+}
+
+.inputfield input:focus {
+	outline: 0;
+}
+
+.inputfield input[type=text]:focus + label, .inputfield input[type=text]:valid + label, .inputfield input[type=password]:focus + label, .inputfield input[type=password]:valid + label, .inputfield input[type=email]:focus + label, .inputfield input[type=email]:not(:placeholder-shown) + label {
+	top: 0;
+	font-size: 85%;
+	color: #888888;
+}
+
