@@ -9,14 +9,22 @@ body {
 
 .signupForm {
 	background: #f2f2f2;
-	padding: 10px;
+	padding: 10px 16px 8px;
 	display: inline-block;
+}
+
+.signupForm h2 {
+	margin: 0;
 }
 
 .inputfield {
 	position: relative;
 	padding: 12px 0 0;
 	margin: 0 0 5px;
+}
+
+label.dob {
+    padding: 0 0 0 6px;	
 }
 
 .inputfield input[type=text] + label, .inputfield input[type=password] + label, .inputfield input[type=email] + label {
@@ -34,6 +42,23 @@ body {
 	border-left: 0;
 	border-right: 0;
 	background: transparent;
+}
+
+.inputfield input[type=number]#dobday, .inputfield input[type=number]#dobmonth  {
+	min-width: 3.6em;
+}
+.inputfield input[type=number]#dobyear  {
+	min-width: 4.5em;
+}
+
+.inputfield input[type=submit] {
+    background: #FDB630;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 5px 0;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .inputfield input:focus {
