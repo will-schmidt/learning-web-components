@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabs</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+<div class="tabComponent">
+<!-- Insert code to create tabbed components here -->
+	<ul>
+		<li>
+			<input type="radio" name="tab" id="log-in" class="hidden" checked="checked">
+			<label for="log-in" class="tab-label">Log In</label>
+			<div class="content">
+				<div class="signupForm">
+					<h2>Log In</h2>
+					<form>
+						<div class="inputfield">	
+							<input type="email" name="emailaddress" id="emailaddress" placeholder=" ">		
+							<label for="emailaddress">Email</label>
+						</div>
+						<div class="inputfield">
+							<input type="password" name="password" id="password" required>					
+							<label for="password">Password</label>
+						</div>
+						<div class="inputfield">			
+							<input type="submit" name="submit" id="submit">
+						</div>
+						<a href="#" class="forgot-password">Forgot password?</a>
+					</form>
+				</div>
+			</div>
+		</li>
+		<li>
+			<input type="radio" name="tab" id="register" class="hidden">
+			<label for="register" class="tab-label">Register</label>
+			<div class="content">				
+				<div class="signupForm">
+					<h2>Sign Up</h2>
+					<form>
+						<div class="inputfield">
+							<input required type="text" name="firstname" id="firstname">
+							<label for="firstname">First name</label>
+						</div>
+						<div class="inputfield">	
+							<input type="text" name="lastname" id="lastname" required>	
+							<label for="lastname">Last name</label>
+						</div>
+						<div class="inputfield">	
+							<input type="email" name="emailaddress" id="emailaddress" placeholder=" ">		
+							<label for="emailaddress">Email</label>
+						</div>
+						<div class="inputfield">
+							<label class="dob">Date of birth</label><span>E.g. 21/07/1980</span><br/>
+							<input type="number" name="dobday" id="dobday" min="1" max="31" placeholder="DD">
+							<input type="number" name="dobmonth" id="dobmonth" min="1" max="12" placeholder="MM">
+							<input type="number" name="dobyear" id="dobyear" min="1910" max="2040" placeholder="YYYY">
+						</div>
+						<div class="inputfield">
+							<input type="password" name="password" id="password" required>					
+							<label for="password">Password</label>
+						</div>
+						<div class="inputfield">	
+							<input type="password" name="cfmpassword" id="cfmpassword" required>		
+							<label for="cfmpassword">Confirm password</label>
+						</div>
+						<div class="inputfield">			
+							<input type="submit" name="submit" id="submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</li>
+		<li>
+			<input type="radio" name="tab" id="kitchen" class="hidden">
+			<label for="kitchen" class="tab-label">Kitchen</label>
+			<div class="content">Bring the best out of the masterchef in you!!</div>
+		</li>
+		<!-- Add additional tab -->
+		<li>
+			<input type="radio" name="tab" id="clearance" class="hidden">
+			<label for="clearance" class="tab-label">Clearance</label>
+			<div class="content">Red hot deals at affordable prices. Check out our clearance section for more details.</div>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+/* Div for whole tab ara */
+div.tabComponent {
+	max-width: 600px;
+    /*min-height: 200px;*/
+    border-left: 1px solid #CFD6D6;
+}
+
+div.tabComponent ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+
+div.tabComponent li {
+	float: left;
+}
+
+
+/* Radio input for toggling  */
+div.tabComponent input.hidden {
+	display: none;
+}
+
+/* Label for tab name  */
+div.tabComponent label.tab-label {
+	font-weight: 700;
+	background: #F7F7F7;
+	cursor: pointer;
+	display: block;
+	padding: 4px 8px 6px;
+	border-right: 1px solid #CFD6D6;
+	border-top: 1px solid #CFD6D6;
+	color: #303336;
+}
+
+/* Label of tab that has radio button checked */
+div.tabComponent input:checked + label.tab-label {
+	background: white;/*#7B8DAB;*/	
+	border-top: 2px solid #FDB630;
+	padding-top: 3px;
+	position: relative;
+    z-index: 1;
+}
+
+/* Content area for each tab */
+div.tabComponent li div.content {
+	display: none;
+	background: white;
+	position: absolute;
+	left: -1px;
+	top: 30px;
+	padding: 10px 15px;
+	border: 1px solid #CFD6D6;
+	width: 100%;
+}
+
+/* Div under radio button that's checked */
+div.tabComponent input:checked ~ div.content {
+	display: block;
+}
+
+
+div.tabComponent ul:after {
+	clear: both;
+    content: " ";
+    height: 0;
+    display: block;
+}
+
+
+/* Sign up form styling */
+
+.signupForm {
+	/*background: #f2f2f2;
+	padding: 15px 23px 12px;*/
+	display: inline-block;
+	min-width: 340px;
+    border: 1px solid #CFD6D6;
+	border-top: 2px solid #FDB630;
+	margin: 18px;
+}
+
+.signupForm h2 {
+	margin: 0;
+    text-transform: uppercase;
+    padding: 10px 23px 0px;
+}
+
+.signupForm form {
+    padding: 2px 23px 12px;
+}
+
+.inputfield {
+	position: relative;
+	padding: 12px 0 0;
+	margin: 0 0 5px;
+}
+
+/*label.dob {
+    padding: 0 0 0 6px;	
+}*/
+
+.signupForm .inputfield input[type=text] + label, .signupForm .inputfield input[type=password] + label, .signupForm .inputfield input[type=email] + label {
+	position: absolute;
+	left: 0;
+	top: 15px;
+	cursor: text;
+}
+
+.signupForm .inputfield input[type=text], .signupForm .inputfield input[type=password], .signupForm .inputfield input[type=email] {
+	width: 100%;
+}
+
+.signupForm .inputfield input {
+	font-size: 14px;
+	padding: 4px 7px 4px 0;
+	border: 2px solid #C9C9C9;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	background: transparent;
+}
+
+.signupForm .inputfield span {
+    font-size: 0.7em;
+    margin-left: 1em;
+}
+
+.signupForm .inputfield input[type=number]#dobday, .inputfield input[type=number]#dobmonth  {
+	min-width: 3.6em;
+}
+.signupForm .inputfield input[type=number]#dobyear  {
+	min-width: 4.5em;
+}
+
+.signupForm .inputfield input[type=submit] {
+    background: #FDB630;
+    border: none;
+    width: 33%;
+    text-transform: uppercase;
+    margin: 5px 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.inputfield input:focus {
+	outline: 0;
+}
+
+.inputfield input[type=text]:focus + label, .inputfield input[type=text]:valid + label, .inputfield input[type=password]:focus + label, .inputfield input[type=password]:valid + label, .inputfield input[type=email]:focus + label, .inputfield input[type=email]:not(:placeholder-shown) + label {
+	top: 0;
+	font-size: 85%;
+	color: #888888;
+}
+
+
+
+
