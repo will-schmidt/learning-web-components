@@ -96,3 +96,12 @@ body {
 	color: #888888;
 }
 
+/*Hide billing if checkbox checked
+*/
+input#copy_shipping[type=checkbox]:checked ~ div.billing-address {
+	display: none;
+}
+
+
+
+
