@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.signupForm {
+	/*background: #f2f2f2;
+	padding: 15px 23px 12px;*/
+	display: inline-block;
+	min-width: 340px;
+    border: 1px solid #CFD6D6;
+	border-top: 2px solid #FDB630;
+}
+
+.signupForm h2 {
+	margin: 0;
+    text-transform: uppercase;
+    padding: 10px 23px 0px;
+}
+
+.signupForm form {
+    padding: 2px 23px 12px;
+}
+
+.inputfield {
+	position: relative;
+	padding: 12px 0 0;
+	margin: 0 0 5px;
+}
+
+/*label.dob {
+    padding: 0 0 0 6px;	
+}*/
+
+.inputfield input[type=text] + label, .inputfield input[type=password] + label, .inputfield input[type=email] + label {
+	position: absolute;
+	left: 0;
+	top: 15px;
+	cursor: text;
+}
+
+.inputfield input[type=text], .inputfield input[type=password], .inputfield input[type=email] {
+	width: 100%;
+}
+
+.inputfield input {
+	font-size: 14px;
+	padding: 4px 7px 4px 0;
+	border: 2px solid #C9C9C9;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	background: transparent;
+}
+
+.inputfield select {
+    padding: 4px 7px 4px 0;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0 0;
+}
+
+.inputfield span {
+    font-size: 0.7em;
+    margin-left: 1em;
+}
+
+.inputfield input[type=number]#dobday, .inputfield input[type=number]#dobmonth  {
+	min-width: 3.6em;
+}
+.inputfield input[type=number]#dobyear  {
+	min-width: 4.5em;
+}
+
+.inputfield input[type=submit] {
+    background: #FDB630;
+    border: none;
+    width: 33%;
+    text-transform: uppercase;
+    margin: 5px 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.inputfield input:focus {
+	outline: 0;
+}
+
+.inputfield input[type=text]:focus + label, .inputfield input[type=text]:valid + label, .inputfield input[type=password]:focus + label, .inputfield input[type=password]:valid + label, .inputfield input[type=email]:focus + label, .inputfield input[type=email]:not(:placeholder-shown) + label {
+	top: 0;
+	font-size: 85%;
+	color: #888888;
+}
+
+/*Hide billing if checkbox checked
+*/
+input#copy_shipping[type=checkbox]:checked ~ div.billing-address {
+	display: none;
+}
+
+div.row {
+	clear: both;
+}
+.inputfield input#cc-number {
+	width: 60%;
+	float: left;
+}
+.inputfield input#cc-csv {
+	width: 20%;
+	float: right;
+}
+
+
+
+

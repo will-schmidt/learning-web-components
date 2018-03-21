@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+<div class="signupForm">
+	<h2>Payment</h2>
+	<form>
+			<div class="row">
+				<div class="inputfield">
+					<input required type="text" name="cc-number" id="cc-number" maxlength="19">
+					<label for="cc-number" >Card number</label>
+				</div>				
+
+				<div class="inputfield">	
+					<input type="text" name="cc-csv" id="cc-csv" required maxlength="3">	
+					<label for="cc-csv">CSV code</label>
+				</div>
+			</div> <!-- end of row -->
+			<div class="row">
+				<div class="inputfield">	
+					<input type="text" name="cc-name" id="cc-name" required>	
+					<label for="cc-name">Cardholder name</label>
+				</div>
+			</div> <!-- end of row -->
+			<div class="row">
+				<div class="inputfield">	
+					<label for="cc-month">Month</label>
+					<select name="cc-month" id="cc-month">
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+
+					</select>
+				</div>
+				<div class="inputfield">	
+					<label for="cc-year">Year</label>
+					<select name="cc-year" id="cc-year">
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+						<option value="2023">2023</option>
+						<option value="2024">2024</option>
+						<option value="2025">2025</option>
+						<option value="2026">2026</option>
+						<option value="2027">2027</option>
+						<option value="2028">2028</option>
+						<option value="2029">2029</option>
+						<option value="2030">2030</option>
+						<option value="2031">2031</option>
+						<option value="2032">2032</option>
+						<option value="2033">2033</option>
+					</select>
+				</div>			
+			</div> <!-- end of row -->		
+
+
+
+		<div class="inputfield">			
+			<input type="submit" name="submit" id="submit">
+		</div>
+	</form>
+</div>
+</body>
+</html>
