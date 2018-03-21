@@ -10,24 +10,18 @@
 	<h2>Payment</h2>
 	<form>
 			<div class="row">
-				<div class="inputfield">
+				<div class="inputfield medium left">
 					<input required type="text" name="cc-number" id="cc-number" maxlength="19">
 					<label for="cc-number" >Card number</label>
 				</div>				
 
-				<div class="inputfield">	
+				<div class="inputfield small right">	
 					<input type="text" name="cc-csv" id="cc-csv" required maxlength="3">	
 					<label for="cc-csv">CSV code</label>
 				</div>
 			</div> <!-- end of row -->
 			<div class="row">
-				<div class="inputfield">	
-					<input type="text" name="cc-name" id="cc-name" required>	
-					<label for="cc-name">Cardholder name</label>
-				</div>
-			</div> <!-- end of row -->
-			<div class="row">
-				<div class="inputfield">	
+				<div class="inputfield left small">	
 					<label for="cc-month">Month</label>
 					<select name="cc-month" id="cc-month">
 						<option value="01">01</option>
@@ -45,7 +39,7 @@
 
 					</select>
 				</div>
-				<div class="inputfield">	
+				<div class="inputfield left">	
 					<label for="cc-year">Year</label>
 					<select name="cc-year" id="cc-year">
 						<option value="2018">2018</option>
@@ -67,12 +61,18 @@
 					</select>
 				</div>			
 			</div> <!-- end of row -->		
-
-
-
-		<div class="inputfield">			
-			<input type="submit" name="submit" id="submit">
-		</div>
+			<div class="row">
+				<div class="inputfield">	
+					<input type="text" name="cc-name" id="cc-name" required>	
+					<label for="cc-name">Cardholder name</label>
+				</div>
+			</div> <!-- end of row -->
+			<div class="row">
+				<div class="inputfield">			
+					<input type="submit" name="submit" id="submit">
+				</div>
+			</div> <!-- end of row -->					
+			
 	</form>
 </div>
 </body>

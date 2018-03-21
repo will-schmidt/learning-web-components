@@ -105,15 +105,19 @@ input#copy_shipping[type=checkbox]:checked ~ div.billing-address {
 div.row {
 	clear: both;
 }
-.inputfield input#cc-number {
+.inputfield.medium {
 	width: 60%;
-	float: left;
 }
-.inputfield input#cc-csv {
+.inputfield.small {
 	width: 20%;
-	float: right;
 }
 
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
 
 
 
