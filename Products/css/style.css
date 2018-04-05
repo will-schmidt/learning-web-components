@@ -80,3 +80,24 @@ header.product-header {
 	display: table;
 	clear: both;
 }
+
+
+.shopping-cart table {
+	width: 100%;
+}
+.shopping-cart td {
+    padding: 0.75em;
+}
+.shopping-cart td img {
+    max-width:200px;
+    height:auto;
+}
+.shopping-cart span.cart-product-name, .shopping-cart span.cart-product-desc {
+	display: block;
+}
+
+.shopping-cart .remove-cart {
+
+    color: #FDB630;
+
+}
